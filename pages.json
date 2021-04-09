@@ -1,0 +1,173 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index/index",
+			"style": {}
+		},
+		{
+			"path": "pages/community/index/index",
+			"style": {}
+		},
+		{
+			"path": "pages/mall/index/index",
+			"style": {}
+		},
+		{
+			"path": "pages/my/index/index",
+			"style": {}
+		},
+		{
+			"path": "pages/my/score/index",
+			"style": {}
+		},
+		{
+			"path": "pages/my/info/index/index",
+			"style": {}
+		},
+		{
+			"path": "pages/my/info/setEmail/index",
+			"style": {}
+		},
+		{
+			"path": "pages/my/info/adress/index",
+			"style": {}
+		},
+		{
+			"path": "pages/my/info/phone/index",
+			"style": {}
+		},
+		{
+			"path": "pages/my/info/sendPhone/index",
+			"style": {}
+		},
+		{
+			"path": "pages/my/info/newPhone/index",
+			"style": {}
+		},
+		{
+			"path": "pages/my/set/index/index",
+			"style": {}
+		},
+		{
+			"path": "pages/my/info/nickName/index",
+			"style": {}
+		},
+		{
+			"path": "pages/my/set/passWord/index",
+			"style": {}
+		},
+		{
+			"path": "pages/my/set/sendPassWd/index",
+			"style": {}
+		},
+		{
+			"path": "pages/my/set/newPassWd/index",
+			"style": {}
+		},
+		{
+			"path": "pages/my/baoxiu/index/index",
+			"style": {}
+		},
+		{
+			"path": "pages/my/baoxiu/success/index",
+			"style": {}
+		},
+		{
+			"path": "pages/my/collect/index/index",
+			"style": {}
+		},
+		{
+			"path": "pages/my/bindmedia/index/index",
+			"style": {}
+		},
+		{
+			"path": "pages/my/bindmedia/success/index",
+			"style": {}
+		},
+		{
+			"path": "pages/my/bindmedia/scan/index",
+			"style": {}
+		},
+		{
+			"path": "pages/my/order/index/index",
+			"style": {}
+		},
+		{
+			"path": "pages/my/order/detail/index",
+			"style": {}
+		},
+		{
+			"path": "pages/mall/shopIndex/index",
+			"style": {}
+		},
+		{
+			"path": "pages/mall/fastPay/index",
+			"style": {}
+		},
+		{
+			"path": "pages/mall/cartCar/index", 
+			"style": {}
+		},
+		{
+			"path": "pages/my/onlineDot/index/index",
+			"style": {}
+		},
+		{ 
+			"path": "pages/my/onlineDot/mapIndex/index",
+			"style": {
+				"app-plus": {
+					"subNVues": [{
+						"id": "maps",
+						"path": "pages/my/onlineDot/map/index",
+						"style": {
+							"position":"absolute",
+							"background": "transparent"
+						}
+					}]
+				}
+			}
+		},
+		{
+			"path": "pages/my/chat/index/index",
+			"style": {}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "demo",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"navigationStyle": "custom"
+	},
+	"tabBar": {
+		"color": "#696F7B",
+		"selectedColor": "white",
+		"borderStyle": "black",
+		"backgroundColor": "#2D343C",
+		"list": [{
+				"pagePath": "pages/index/index/index",
+				"iconPath": "static/images/icons/tabbar/car.png",
+				"selectedIconPath": "static/images/icons/tabbar/car-active.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/community/index/index",
+				"iconPath": "static/images/icons/tabbar/community.png",
+				"selectedIconPath": "static/images/icons/tabbar/community-active.png",
+				"text": "社区"
+			},
+			{
+				"pagePath": "pages/mall/index/index",
+				"iconPath": "static/images/icons/tabbar/mall.png",
+				"selectedIconPath": "static/images/icons/tabbar/mall-active.png",
+				"text": "商城"
+			},
+			{
+				"pagePath": "pages/my/index/index",
+				"iconPath": "static/images/icons/tabbar/my.png",
+				"selectedIconPath": "static/images/icons/tabbar/my-active.png",
+				"text": "我的"
+			}
+		]
+	}
+}

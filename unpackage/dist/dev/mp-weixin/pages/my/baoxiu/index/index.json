@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "car-nav-bar": "/components/car-nav-bar/car-nav-bar",
+    "car-container": "/components/car-container/car-container",
+    "car-cell": "/components/car-cell/car-cell",
+    "car-uploader": "/components/car-uploader/car-uploader"
+  }
+}

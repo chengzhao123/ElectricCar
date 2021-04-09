@@ -1,0 +1,378 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.rightIcon.data-v-c40cf706 {
+  position: absolute;
+  right: 32rpx;
+  bottom: 140rpx;
+}
+.rightIcon .service.data-v-c40cf706, .rightIcon .top.data-v-c40cf706 {
+  padding: 22rpx 26rpx;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #FFFFFF;
+}
+.rightIcon .service text.data-v-c40cf706, .rightIcon .top text.data-v-c40cf706 {
+  font-size: 40rpx;
+  color: #000000;
+}
+.rightIcon .top.data-v-c40cf706 {
+  margin-top: 22rpx;
+}
+.oneModal.data-v-c40cf706 {
+  bottom: 100rpx !important;
+}
+.oneModal .typeDialog.data-v-c40cf706 {
+  -webkit-border-top-right-radius: 24rpx;
+          border-top-right-radius: 24rpx;
+  -webkit-border-top-left-radius: 24rpx;
+          border-top-left-radius: 24rpx;
+  width: 100vw;
+  height: 602rpx;
+  overflow-y: auto;
+  position: relative;
+}
+.oneModal .typeDialog .closeBtn.data-v-c40cf706 {
+  position: fixed;
+  right: 34rpx;
+  bottom: 538rpx;
+  color: #C4C4C4;
+}
+.oneModal .typeDialog .diaCont.data-v-c40cf706 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 40rpx 32rpx;
+}
+.oneModal .typeDialog .diaCont .dialogInfo.data-v-c40cf706 {
+  position: relative;
+  overflow-y: auto;
+}
+.oneModal .typeDialog .diaCont .dialogInfo .dialogTop.data-v-c40cf706 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  overflow-x: hidden;
+}
+.oneModal .typeDialog .diaCont .dialogInfo .dialogTop .diaImgArea.data-v-c40cf706 {
+  width: 180rpx;
+  height: 180rpx;
+}
+.oneModal .typeDialog .diaCont .dialogInfo .dialogTop .diaImgArea .dialogImg.data-v-c40cf706 {
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 12rpx;
+          border-radius: 12rpx;
+}
+.oneModal .typeDialog .diaCont .dialogInfo .dialogTop .dialogRight.data-v-c40cf706 {
+  overflow: hidden;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  margin-left: 24rpx;
+  padding-right: 84rpx;
+  height: 180rpx;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+          align-items: flex-start;
+}
+.oneModal .typeDialog .diaCont .dialogInfo .dialogTop .dialogRight .diaShopTitle.data-v-c40cf706 {
+  position: relative;
+  width: 100%;
+  margin-right: 84rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 28rpx;
+  color: #222222;
+}
+.oneModal .typeDialog .diaCont .dialogInfo .dialogTop .dialogRight .diaShopCost.data-v-c40cf706 {
+  font-size: 44rpx;
+  color: #EC3E55;
+}
+.oneModal .typeDialog .diaCont .dialogInfo .dialogTop .dialogRight .diaShopSave.data-v-c40cf706 {
+  font-size: 28rpx;
+  color: #69707C;
+}
+.oneModal .typeDialog .diaCont .dialogInfo .cartColor.data-v-c40cf706 {
+  position: relative;
+  width: 100%;
+  margin-top: 40rpx;
+}
+.oneModal .typeDialog .diaCont .dialogInfo .cartColor .colorTitle.data-v-c40cf706 {
+  font-size: 28rpx;
+  color: #222222;
+  text-align: left;
+  margin-bottom: 16rpx;
+}
+.oneModal .typeDialog .diaCont .dialogInfo .cartColor .colorType.data-v-c40cf706 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.oneModal .typeDialog .diaCont .dialogInfo .cartColor .colorType .colorItem.data-v-c40cf706 {
+  font-size: 28rpx;
+  color: #222222;
+  background-color: transparent;
+  width: 132rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  text-align: center;
+  border: 1px solid #DDDDDD;
+  -webkit-border-radius: 8rpx;
+          border-radius: 8rpx;
+  margin-right: 20rpx;
+  margin-bottom: 10rpx;
+}
+.oneModal .typeDialog .diaCont .dialogInfo .cartColor .colorType .activeColor.data-v-c40cf706 {
+  background-color: #2A77FF;
+  color: #FFFFFF;
+}
+.oneModal .typeDialog .diaCont .dialogInfo .cartCount.data-v-c40cf706 {
+  position: relative;
+  width: 100%;
+  margin-top: 40rpx;
+  margin-bottom: 50rpx;
+}
+.oneModal .typeDialog .diaCont .dialogInfo .cartCount .countTitle.data-v-c40cf706 {
+  font-size: 28rpx;
+  color: #222222;
+  text-align: left;
+  margin-bottom: 16rpx;
+}
+.oneModal .typeDialog .diaCont .dialogInfo .cartCount .inputCount.data-v-c40cf706 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.oneModal .typeDialog .diaCont .dialogInfo .cartCount .inputCount .countRem.data-v-c40cf706, .oneModal .typeDialog .diaCont .dialogInfo .cartCount .inputCount .countAdd.data-v-c40cf706 {
+  width: 80rpx;
+  height: 64rpx;
+  color: #838A93;
+  border-top: 1px solid #838A93;
+  border-bottom: 1px solid #838A93;
+  text-align: center;
+  line-height: 64rpx;
+}
+.oneModal .typeDialog .diaCont .dialogInfo .cartCount .inputCount .countNum.data-v-c40cf706 {
+  width: 132rpx;
+  height: 68rpx;
+  border: 1px solid #838A93;
+}
+.oneModal .typeDialog .diaCont .dialogInfo .cartCount .inputCount .countRem.data-v-c40cf706 {
+  border-left: 1px solid #838A93;
+  -webkit-border-top-left-radius: 8rpx;
+          border-top-left-radius: 8rpx;
+  -webkit-border-bottom-left-radius: 8rpx;
+          border-bottom-left-radius: 8rpx;
+}
+.oneModal .typeDialog .diaCont .dialogInfo .cartCount .inputCount .countAdd.data-v-c40cf706 {
+  border-right: 1px solid #838A93;
+  -webkit-border-top-right-radius: 8rpx;
+          border-top-right-radius: 8rpx;
+  -webkit-border-bottom-right-radius: 8rpx;
+          border-bottom-right-radius: 8rpx;
+}
+.oneModal .typeDialog .diaCont .dialogInfo .cartCount .inputCount .lastCount.data-v-c40cf706 {
+  opacity: 0.3;
+}
+.mf.data-v-c40cf706 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #191E24;
+}
+.mf .cart image.data-v-c40cf706 {
+  width: 42rpx;
+  height: 42rpx;
+}
+.mf .shopNum.data-v-c40cf706 {
+  position: absolute;
+  right: -10rpx;
+  top: -8rpx;
+  font-size: 20rpx !important;
+  background-color: #EC3E55;
+  padding: 2rpx 12rpx;
+  -webkit-border-radius: 14rpx;
+          border-radius: 14rpx;
+}
+.mf .content.data-v-c40cf706 {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 40rpx;
+}
+.mf .content .shopImg.data-v-c40cf706 {
+  width: 100vw;
+  height: 750rpx;
+}
+.mf .content .shopImg image.data-v-c40cf706 {
+  width: 100%;
+  height: 100%;
+}
+.mf .content .topDetail.data-v-c40cf706 {
+  padding: 36rpx 32rpx 40rpx 32rpx;
+  background-color: #22282F;
+  margin-bottom: 20rpx;
+}
+.mf .content .topDetail .topTitle.data-v-c40cf706, .mf .content .topDetail .topInfo.data-v-c40cf706 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.mf .content .topDetail .topTitle.data-v-c40cf706 {
+  font-size: 36rpx;
+  color: #FFFFFF;
+}
+.mf .content .topDetail .topInfo.data-v-c40cf706 {
+  margin-top: 12rpx;
+  font-size: 28rpx;
+  color: #69707C;
+}
+.mf .content .topDetail .topMoney.data-v-c40cf706 {
+  display: block;
+  font-size: 44rpx;
+  color: #EC3E55;
+  margin-top: 28rpx;
+}
+.mf .content .topDetail .topPreInfo.data-v-c40cf706 {
+  margin-top: 20rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.mf .content .topDetail .topPreInfo text.data-v-c40cf706 {
+  font-size: 24rpx;
+  color: #69707C;
+}
+.mf .content .email.data-v-c40cf706 {
+  text-align: right;
+  font-size: 28rpx;
+  color: #FFFFFF;
+}
+.mf .content .shopCartInfo.data-v-c40cf706 {
+  width: 100%;
+  margin-top: 20rpx;
+  padding: 40rpx 32rpx;
+  background-color: #22282F;
+}
+.mf .content .shopCartInfo .cartInfo.data-v-c40cf706 {
+  font-size: 30rpx;
+  color: #FFFFFF;
+}
+.mf .content .shopCartInfo .cartInfoArea.data-v-c40cf706 {
+  margin-top: 40rpx;
+  position: relative;
+  width: 100%;
+  height: 1836rpx;
+  background-color: #575A60;
+}
+.mf .content .shopWillLike.data-v-c40cf706 {
+  background-color: #191E24;
+  padding: 40rpx 32rpx;
+}
+.mf .content .shopWillLike .cartLikeInfo.data-v-c40cf706 {
+  font-size: 30rpx;
+  color: #FFFFFF;
+}
+.mf .content .shopWillLike .cartLikeList.data-v-c40cf706 {
+  margin: 20rpx 0;
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.mf .content .shopWillLike .cartLikeList .midTitle.data-v-c40cf706 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size: 26rpx;
+  color: #FFFFFF;
+}
+.mf .content .shopWillLike .cartLikeList .btmTwoTitle.data-v-c40cf706 {
+  font-size: 32rpx;
+  color: #EC3E55;
+}
+.mf .content .shopWillLike .cartLikeList .btmTwoPreTitle.data-v-c40cf706 {
+  font-size: 28rpx;
+  text-decoration: line-through;
+  color: #69707C;
+}
+

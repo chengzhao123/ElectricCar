@@ -1,0 +1,1 @@
+<car-nav-bar vue-id="223998a4-1" isBack="{{true}}" title="扫码二维码" backColor="#22282F" data-event-opts="{{[['^back',[['back']]]]}}" bind:back="__e" class="data-v-1ed306bc" bind:__l="__l" vue-slots="{{['left']}}"><view slot="left" class="data-v-1ed306bc"><text class="cuIcon cuIcon-back data-v-1ed306bc"></text></view></car-nav-bar>

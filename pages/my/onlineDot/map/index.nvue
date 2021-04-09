@@ -1,0 +1,315 @@
+<template>
+	<view id="maps">
+		<!-- 顶部输入框 -->
+		<view class="topInput">
+			<view class="inputArea">
+				<image class="ser" src="/static/images/icons/my/search.png" mode="widthFix"></image>
+				<input class="inputKuang" type="text" placeholder="请输入网点名称" v-model="search" />
+				<image class="clo" src="/static/images/icons/my/del.png" mode="widthFix"></image>
+			</view>
+		</view>
+		<!-- v-if="search" -->
+		<view class="blurSearchList" v-if="search.length > 0">
+			<scroller class="scrolls" :show-scrollbar="false">
+				<view class="car-map-cage" v-for="(item, index) in 10" :key="index" @click="jump(item, index)">
+					<view class="car-map-img">
+						<image class="iga" src="/static/images/icons/mall/shopName.jpg" mode="scaleToFill"></image>
+					</view>
+					<view class="car-map-right">
+						<view class="car-map-dis">
+							<text class="car-pos">成都市修车行</text>
+							<text class="car-detail-pos">成都市武侯区武侯大道122号成都市武侯区武侯大道122号成都市武侯区武侯大道122号</text>
+						</view>
+						<view class="car-map-r">
+							<view class="car-map-r-l">
+
+							</view>
+							<view class="car-map-r-r">
+								<image class="loc" src="/static/images/icons/my/loc.png" mode="widthFix"></image>
+								<text class="car-distance">4.4km</text>
+							</view>
+						</view>
+					</view>
+				</view>
+			</scroller>
+
+		</view>
+		<view class="nowPos" @click.stop="stop">
+			<view class="car-map-cage car-map-bom">
+				<view class="car-map-img">
+					<image class="iga" src="/static/images/icons/mall/shopName.jpg" mode="scaleToFill"></image>
+				</view>
+				<view class="car-map-right">
+					<view class="car-map-dis">
+						<text class="car-pos">成都市修车行</text>
+						<text class="car-detail-pos">成都市武侯区武侯大道122号成都市武侯区武侯大道122号成都市武侯区武侯大道122号</text>
+					</view>
+					<view class="car-map-r">
+						<view class="car-map-r-l">
+
+						</view>
+						<view class="car-map-r-r">
+							<image class="loc" src="/static/images/icons/my/loc.png" mode="widthFix"></image>
+							<text class="car-distance">4.4km</text>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="searchBtn" :style="{'bottom': 60 + 90 * 2+ 'rpx' }" @click="surePos">
+			<image class="pos" src="/static/images/icons/my/loc.png" mode="widthFix"></image>
+		</view>
+	</view>
+</template>
+
+<script>
+	export default {
+		name: "MapIndexVue",
+		data() {
+			return {
+				search: '',
+				cellList: 90,
+				canClick: true
+			}
+		},
+		computed: {
+			mapCellStyle() {
+				let style = {
+					'border-bottom': '1px solid #343B43',
+					'margin': 0
+				}
+				return style
+			},
+			SearchList() {
+				let style = {
+					'max-height': 360 + 'rpx',
+					'top': 300 + +'px'
+				}
+				return style
+			}
+		},
+		methods: {
+			surePos() {
+				if (!this.canClick) return
+				this.getLoc()
+				this.canClick = false
+			},
+			jump(i, e) {
+				console.log(e)
+			},
+			stop() {
+
+			},
+			getLoc() {
+				console.log('这是子页面')
+				uni.getLocation({
+					type: 'wgs84',
+					success: (res) => {
+						// 向父页面发送消息
+						uni.$emit('getLocation', {
+							data: res
+						});
+						setTimeout(() => {
+							this.canClick = true
+						},1000)
+					}
+				});
+			}
+		},
+		mounted() {
+			this.getLoc()
+		}
+	}
+</script>
+
+
+
+<style lang="scss" scoped>
+	.topInput {
+		position: relative;
+
+		.inputArea {
+			background-color: #313840;
+			margin: 0 32rpx;
+			height: 88rpx;
+			border-radius: 12rpx;
+			// display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			padding: 28rpx 24rpx;
+
+			.search {
+				font-size: 32rpx;
+				color: #69707C;
+			}
+
+			.clo,
+			.ser {
+				width: 30rpx;
+			}
+
+			.inputKuang {
+				margin-left: 18rpx;
+				font-size: 28rpx;
+				width: 100%;
+				flex: 1;
+				height: 100%;
+				line-height: 88rpx;
+				z-index: 9999;
+				color: #FFFFFF;
+			}
+
+			.inputKuang::-webkit-input-placeholder {
+				color: #69707C
+			}
+
+			.close {
+				margin-left: 32rpx;
+				color: #545C64;
+				font-size: 32rpx;
+			}
+		}
+	}
+
+	.nowPos {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 32rpx;
+		height: 180rpx;
+		overflow: hidden;
+	}
+
+	.blurSearchList {
+		position: relative;
+		margin: 32rpx 32rpx 0 32rpx;
+		height: 360rpx;
+		background-color: #22282F;
+		overflow: hidden !important;
+	}
+
+	.scrolls {
+		height: 360rpx;
+		flex-direction: column;
+	}
+
+	.searchBtn {
+		position: absolute;
+		right: 32rpx;
+		bottom: 200rpx;
+		text-align: center;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		font-size: 40rpx;
+		width: 88rpx;
+		height: 88rpx;
+		background-color: #FFFFFF;
+		border-radius: 50%;
+
+		.pos {
+			width: 48rpx;
+			height: 48rpx;
+		}
+	}
+
+	.car-map-bom {
+		margin: 0 32rpx;
+	}
+
+	.car-map-cage {
+		border-radius: 12rpx;
+		height: 180rpx;
+		padding: 22rpx 22rpx;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		background-color: #22282F;
+		border-bottom: 1px solid #343B43;
+
+		.car-map-img {
+			width: 136rpx;
+			height: 136rpx;
+			margin-right: 24rpx;
+
+			.iga {
+				width: 136rpx;
+				height: 136rpx;
+			}
+		}
+
+		.car-map-right {
+			flex: 1;
+			height: 100%;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+
+			.car-map-dis {
+				margin-right: 80rpx;
+				flex: 1;
+				width: 0;
+				height: 100%;
+				/* #ifndef APP-NVUE */
+				display: flex;
+				/* #endif */
+				flex-direction: row;
+				align-items: center;
+
+				.car-pos {
+					position: absolute;
+					top: 30rpx;
+					color: #FFFFFF;
+					font-size: 30rpx;
+				}
+
+				.car-detail-pos {
+					margin-top: 8rpx;
+					color: #69707C;
+					font-size: 24rpx;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					/* #ifndef APP-NVUE */
+					white-space: nowrap;
+					/* #endif */
+				}
+			}
+
+			.car-map-r {
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+
+				.car-map-r-l {
+					width: 1px;
+					height: 136rpx;
+					/* #ifndef APP-NVUE */
+					display: block;
+					/* #endif */
+					background-color: #343B43;
+				}
+
+				.car-map-r-r {
+					padding-left: 26rpx;
+					padding-bottom: 20rpx;
+					justify-content: center;
+					align-items: center;
+
+					.loc {
+						margin-bottom: 12rpx;
+						width: 34rpx;
+					}
+
+					.car-distance {
+						color: #FFFFFF;
+						font-size: 24rpx;
+					}
+				}
+			}
+
+
+		}
+
+	}
+</style>

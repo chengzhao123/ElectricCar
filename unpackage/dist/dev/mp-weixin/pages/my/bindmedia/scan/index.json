@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "car-nav-bar": "/components/car-nav-bar/car-nav-bar"
+  }
+}

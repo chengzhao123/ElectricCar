@@ -1,0 +1,280 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.mf.data-v-37ff37b8 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #191E24;
+}
+.mf .content.data-v-37ff37b8 {
+  width: 100%;
+  height: 100%;
+  background-color: #191E24;
+  padding-bottom: 140rpx;
+}
+.mf .content .dates.data-v-37ff37b8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  font-size: 24rpx;
+  margin-top: 46rpx;
+  color: #AAAAAA;
+  position: relative;
+  width: calc(100% - 320rpx);
+  left: 160rpx;
+}
+.mf .content .items.data-v-37ff37b8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding: 30rpx 30rpx 10rpx;
+  position: relative;
+}
+.mf .content .items .mains.data-v-37ff37b8 {
+  max-width: calc(100% - 260rpx);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+          align-items: flex-start;
+  margin: 0 20rpx;
+}
+.mf .content .items .mains .actions.data-v-37ff37b8 {
+  padding-right: 20rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.mf .content .items .mains .actions .del.data-v-37ff37b8 {
+  color: #FF4040;
+}
+.mf .content .items .mains .nickname.data-v-37ff37b8 {
+  font-size: 26rpx;
+  color: #69707C;
+  margin-bottom: 12rpx;
+}
+.mf .content .items .mains .writeContent.data-v-37ff37b8 {
+  padding: 20rpx;
+  -webkit-border-top-left-radius: 0;
+          border-top-left-radius: 0;
+  -webkit-border-top-right-radius: 12rpx;
+          border-top-right-radius: 12rpx;
+  -webkit-border-bottom-left-radius: 12rpx;
+          border-bottom-left-radius: 12rpx;
+  -webkit-border-bottom-right-radius: 12rpx;
+          border-bottom-right-radius: 12rpx;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  max-width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-size: 30rpx;
+  position: relative;
+  min-height: 80rpx;
+  line-height: 40rpx;
+  text-align: left;
+  background-color: #22282F;
+  color: #FFFFFF;
+}
+.mf .content .items .avatars.data-v-37ff37b8 {
+  font-variant: small-caps;
+  margin: 0;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  text-align: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  background-color: #ccc;
+  color: #ffffff;
+  white-space: nowrap;
+  position: relative;
+  width: 80rpx;
+  height: 80rpx;
+  background-size: cover;
+  background-position: center;
+  vertical-align: middle;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+.mf .content .self.data-v-37ff37b8 {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+  text-align: right;
+}
+.mf .content .self .mains.data-v-37ff37b8 {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.mf .content .self > .mains > .writeContent.data-v-37ff37b8 {
+  background-color: #2A77FF;
+  -webkit-border-top-left-radius: 12rpx;
+          border-top-left-radius: 12rpx;
+  -webkit-border-top-right-radius: 0;
+          border-top-right-radius: 0;
+  -webkit-border-bottom-left-radius: 12rpx;
+          border-bottom-left-radius: 12rpx;
+  -webkit-border-bottom-right-radius: 12rpx;
+          border-bottom-right-radius: 12rpx;
+}
+.mf .sendArea.data-v-37ff37b8 {
+  background-color: #2E343C;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 1024;
+  -webkit-box-shadow: 0, -0.5px, 3px, rgba(0, 0, 0, 0.1);
+          box-shadow: 0, -0.5px, 3px, rgba(0, 0, 0, 0.1);
+  min-height: 50px;
+}
+.mf .sendArea input.data-v-37ff37b8 {
+  overflow: initial;
+  line-height: 32px;
+  height: 32px;
+  min-height: 32px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  font-size: 15px;
+  margin: 0 10px;
+}
+.mf .sendArea .notShow.data-v-37ff37b8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.mf .sendArea .notShow .inputA.data-v-37ff37b8 {
+  width: 100%;
+  margin: 20rpx 0 16rpx 32rpx;
+  -webkit-border-radius: 32rpx;
+          border-radius: 32rpx;
+  background-color: #191E24;
+}
+.mf .sendArea .notShow .addbtn.data-v-37ff37b8 {
+  font-size: 64rpx;
+  margin: 0 32rpx;
+}
+.mf .sendArea .notShow .sendBtn.data-v-37ff37b8 {
+  white-space: nowrap;
+  font-size: 28rpx;
+  color: #FFFFFF;
+  background-color: #2A77FF;
+  margin: 0 32rpx;
+}
+.mf .sendArea .show.data-v-37ff37b8 {
+  max-height: 282rpx;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.mf .sendArea .show .actionArea.data-v-37ff37b8 {
+  padding: 60rpx 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  width: -webkit-max-content;
+  width: max-content;
+}
+.mf .sendArea .show .actionArea .itemMx.data-v-37ff37b8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-left: 60rpx;
+}
+.mf .sendArea .show .actionArea .itemMx .imgAr.data-v-37ff37b8 {
+  position: relative;
+  background-color: #191E24;
+  padding: 30rpx;
+}
+.mf .sendArea .show .actionArea .itemMx .imgAr .ig.data-v-37ff37b8 {
+  width: 60rpx;
+  height: 60rpx;
+}
+.mf .sendArea .show .actionArea .itemMx text.data-v-37ff37b8 {
+  margin-top: 20rpx;
+  color: #FFFFFF;
+  font-size: 26rpx;
+}
+.mf .sendArea .show .actionArea .itemMx.data-v-37ff37b8:last-child {
+  margin-right: 60rpx;
+}
+

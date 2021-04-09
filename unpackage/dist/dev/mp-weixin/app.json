@@ -1,0 +1,82 @@
+{
+  "pages": [
+    "pages/index/index/index",
+    "pages/community/index/index",
+    "pages/mall/index/index",
+    "pages/my/index/index",
+    "pages/my/score/index",
+    "pages/my/info/index/index",
+    "pages/my/info/setEmail/index",
+    "pages/my/info/adress/index",
+    "pages/my/info/phone/index",
+    "pages/my/info/sendPhone/index",
+    "pages/my/info/newPhone/index",
+    "pages/my/set/index/index",
+    "pages/my/info/nickName/index",
+    "pages/my/set/passWord/index",
+    "pages/my/set/sendPassWd/index",
+    "pages/my/set/newPassWd/index",
+    "pages/my/baoxiu/index/index",
+    "pages/my/baoxiu/success/index",
+    "pages/my/collect/index/index",
+    "pages/my/bindmedia/index/index",
+    "pages/my/bindmedia/success/index",
+    "pages/my/bindmedia/scan/index",
+    "pages/my/order/index/index",
+    "pages/my/order/detail/index",
+    "pages/mall/shopIndex/index",
+    "pages/mall/fastPay/index",
+    "pages/mall/cartCar/index",
+    "pages/my/onlineDot/index/index",
+    "pages/my/onlineDot/mapIndex/index",
+    "pages/my/chat/index/index"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "demo",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#696F7B",
+    "selectedColor": "white",
+    "borderStyle": "black",
+    "backgroundColor": "#2D343C",
+    "list": [
+      {
+        "pagePath": "pages/index/index/index",
+        "iconPath": "static/images/icons/tabbar/car.png",
+        "selectedIconPath": "static/images/icons/tabbar/car-active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/community/index/index",
+        "iconPath": "static/images/icons/tabbar/community.png",
+        "selectedIconPath": "static/images/icons/tabbar/community-active.png",
+        "text": "社区"
+      },
+      {
+        "pagePath": "pages/mall/index/index",
+        "iconPath": "static/images/icons/tabbar/mall.png",
+        "selectedIconPath": "static/images/icons/tabbar/mall-active.png",
+        "text": "商城"
+      },
+      {
+        "pagePath": "pages/my/index/index",
+        "iconPath": "static/images/icons/tabbar/my.png",
+        "selectedIconPath": "static/images/icons/tabbar/my-active.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  }
+}
